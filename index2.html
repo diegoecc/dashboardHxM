@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user=scalable=no, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+	<title>Navegacion con tabs</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="font-awesome.css">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+		<ul class="tabs">
+			<li><a href="#tab2"><span class="fa fa-tachometer" aria-hidden="true"></span><span class="tab-text">Hora vs Minuto</span></a></li>
+		</ul>
+
+		<div class ="secciones">
+
+			<article id = "tab2">
+			<center><h1>Audiencia TVGO Live Perú de lunes a viernes - Setiembre </h1></center>
+			<br>
+			<br>
+			<head>
+			<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			<script type="text/javascript">
+			google.charts.load('current', {'packages':['corechart']});
+			google.charts.setOnLoadCallback(drawChart);
+
+		     function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+		          ['Maximo (Hora)',  'Total'],
+		          ['00:00',  987],
+		          ['01:00',  531],
+		          ['02:00',  370],
+		          ['03:00',  294],
+		          ['04:00',  265],
+		          ['05:00',  367],
+		          ['06:00',  771],
+		          ['07:00',  1087],
+		          ['08:00',  1189],
+		          ['09:00',  1182],
+		          ['10:00',  1091],
+		          ['11:00',  1116],
+		          ['12:00',  1000],
+		          ['13:00',  1231],
+		          ['14:00',  1305],
+		          ['15:00',  1234],
+		          ['16:00',  1070],
+		          ['17:00',  1093],
+		          ['18:00',  1596],
+		          ['19:00',  2930],
+		          ['20:00',  3394],
+		          ['21:00',  3796],
+		          ['22:00',  3402],
+		          ['23:00',  1847]
+		        ]);
+
+		        var options = {
+		          title: 'PROMEDIO USUARIOS POR MINUTO TOTAL',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div7'));
+
+		        chart.draw(data, options);
+		     	 }
+		    	</script>
+		  		</head>
+		  		<body>
+		   		<div id="chart_div7" style="width: automatic; height: automatic;"></div>
+		 		</body>
+
+			<br>
+			<br>
+
+			<head>
+		    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		    <script type="text/javascript">
+		    google.charts.load('current', {'packages':['corechart']});
+		    google.charts.setOnLoadCallback(drawChart);
+
+		      function drawChart() {
+		        var data = google.visualization.arrayToDataTable([
+		          ['Hora', 'App',  'Desktop',  'MobileWeb'],
+		          ['00:00',  599,     359,     29],
+		          ['01:00',  375,     147,      8],
+		          ['02:00',  276,     90,       4],
+		          ['03:00',  226,     65,       3],
+		          ['04:00',  206,     55,       3],
+		          ['05:00',  268,     89,      10],
+		          ['06:00',  485,     252,     33],
+		          ['07:00',  619,     424,     43],
+		          ['08:00',  631,     512,     46],
+		          ['09:00',  613,     525,     44],
+		          ['10:00',  576,     474,     41],
+		          ['11:00',  589,     483,     44],
+		          ['12:00',  512,     462,     26],
+		          ['13:00',  602,     585,     44],
+		          ['14:00',  625,     634,     45],
+		          ['15:00',  599,     592,     43],
+		          ['16:00',  564,     473,     34],
+		          ['17:00',  554,     504,     35],
+		          ['18:00',  703,     829,     64],
+		          ['19:00',  1245,    1517,    168],
+		          ['20:00',  1395,    1829,    171],
+		          ['21:00',  1667,    1909,    221],
+		          ['22:00',  1609,    1587,    206],
+		          ['23:00',  986,    782,     79]
+		        ]);
+
+		        var options = {
+		          title: 'PROMEDIO USUARIOS POR MINUTO POR PLATAFORMA',
+		          curveType: 'function',
+		          legend: { position: 'bottom left' }
+		        };
+
+		        var chart = new google.visualization.LineChart(document.getElementById('curve_chart8'));
+
+		        chart.draw(data, options);
+			      }
+			    </script>
+			    </head>
+			    <body>
+			    <div id="curve_chart8" style="width: automatic; height: automatic"></div>
+			    </body>
+
+    <br>
+	<br>
+	<br> 
+
+				<head>
+			    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			    <script type="text/javascript">
+			      google.charts.load('current', {'packages':['corechart']});
+			      google.charts.setOnLoadCallback(drawChart);
+
+			      function drawChart() {
+			        var data = google.visualization.arrayToDataTable([
+			          ['Maximo (Hora)',  'Total'],
+		          ['00:00',  2359],
+		          ['01:00',  1029],
+		          ['02:00',  681],
+		          ['03:00',  518],
+		          ['04:00',  427],
+		          ['05:00',  832],
+		          ['06:00',  1560],
+		          ['07:00',  1829],
+		          ['08:00',  2169],
+		          ['09:00',  2159],
+		          ['10:00',  2069],
+		          ['11:00',  2199],
+		          ['12:00',  2189],
+		          ['13:00',  2911],
+		          ['14:00',  3367],
+		          ['15:00',  3628],
+		          ['16:00',  2492],
+		          ['17:00',  2171],
+		          ['18:00',  3948],
+		          ['19:00',  6847],
+		          ['20:00',  8477],
+		          ['21:00',  9013],
+		          ['22:00',  8855],
+		          ['23:00',  3273]
+		        ]);
+
+		        var options = {
+		          title: 'MAXIMO USUARIOS POR MINUTO',
+		        };
+
+		        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div9'));
+
+				chart.draw(data, options);
+				}
+				</script>
+				</head>
+				<body>
+			    <div id="chart_div9" style="width: automatic; height: automatic;"></div>
+				</body>
+
+		<br>
+		<br>
+		<br>
+
+				<head>
+			    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+			    <script type="text/javascript">
+			      google.charts.load('current', {'packages':['corechart']});
+			      google.charts.setOnLoadCallback(drawChart);
+
+			      function drawChart() {
+			        var data = google.visualization.arrayToDataTable([
+			           ['Hora', 'Desktop',  'App',  'MobileWeb'],
+			          ['00:00',  1130,      1366,     205],
+			          ['01:00',  503,       667,      54],
+			          ['02:00',  293,       398,      13],
+			          ['03:00',  217,       311,      10],
+			          ['04:00',  166,       278,      10],
+			          ['05:00',  390,       522,      40],
+			          ['06:00',  879,       962,      86],
+			          ['07:00',  1154,      1045,     93],
+			          ['08:00',  1409,      945,      87],
+			          ['09:00',  1434,      867,      92],
+			          ['10:00',  1282,      841,      110],
+			          ['11:00',  1363,      887,      134],
+			          ['12:00',  1365,      883,      123],
+			          ['13:00',  1828,      1384,     122],
+			          ['14:00',  1841,      1521,     170],
+			          ['15:00',  1952,      1482,     207],
+			          ['16:00',  1723,      1021,     98],
+			          ['17:00',  1493,      933,      83],
+			          ['18:00',  2926,      1405,     166],
+			          ['19:00',  4930,      2533,     391],
+			          ['20:00',  5539,      2560,     473],
+			          ['21:00',  5882,      3212,     706],
+			          ['22:00',  5524,      3123,     713],
+			          ['23:00',  2206,      1636,     272]
+			        ]);
+
+			        var options = {
+			          title: 'MAXIMO USUARIOS POR MINUTO POR PLATAFORMA',
+			        };
+
+			        var chart = new google.visualization.SteppedAreaChart(document.getElementById('chart_div10'));
+
+			        chart.draw(data, options);
+			      }
+				  </script>
+				  </head>
+				  <body>
+				  <div id="chart_div10" style="width: automatic; height: automatic;"></div>
+				  </body>
+				  </article>
+				  <center>
+				  <a title="MAPA" href="https://ibb.co/dSupyw"><img src="mapa.png" alt="Los Tejos" /></a></center>
+		</div>
+	</div>S
+	
+</body>
+</html>
